@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(255, 237, 215);
+    line-height: 1.5;
+}
+.poem_text {
+    text-align: center;
+}
+.poem {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 110%;
+}
+.heading {
+    font-family: 'Open Sans', sans-serif;
+}

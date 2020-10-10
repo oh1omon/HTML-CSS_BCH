@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #333;
+    font-family: 'Comfortaa', cursive;
+}
+header {
+    position: fixed;
+    height: 75px;
+    top: 0;
+    z-index: 2;
+    background-color: #333;
+    width: 100vw;
+}
+main {
+    margin-top: 75px;
+}
+li {
+    padding: 2rem;
+    display: inline-block;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover {
+    color: yellow;
+}
+a:visited {
+    color: orange;
+}
+p {
+    padding: 1rem;
+    margin: 1rem;
+    color: #333;
+    background-color: lightcyan;
+}
+/* p:first-child {
+    color: black;
+}
+p:last-child {
+    color:green;
+} */
+p:nth-child(2n + 4) {
+    color: green;
+    background-color: pink;
+    position: relative;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position:relative;
+    z-index: 1;
+}
+::before {
+    opacity: 0.5;
+}

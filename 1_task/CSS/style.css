@@ -1,0 +1,12 @@
+body    {
+        background-color: lightblue;
+        color: white;
+        font-family: verdana, sans-serif;
+}
+.my_class   {
+    text-decoration: wavy;
+    font-family: verdana, sans-serif;
+}
+#my_ID   {
+    color: greenyellow;
+}

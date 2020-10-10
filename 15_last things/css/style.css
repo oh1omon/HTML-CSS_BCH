@@ -1,0 +1,38 @@
+.card {
+    height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: skyblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    transition: all 1s 0s;
+}
+.card:hover {
+    transform: rotate(125deg);
+}
+.circle {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    transition: all 2s;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: black;
+        height: 200px;
+    }
+}

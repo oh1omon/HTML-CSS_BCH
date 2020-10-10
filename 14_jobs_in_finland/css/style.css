@@ -1,0 +1,288 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #002da2;
+}
+@font-face {
+    font-family: 'Finlandica';
+    /* For smart browsers */
+    src: url(../assets/fonts/finlandica-regularWeb.ttf) format('truetype'),
+        url(../assets/fonts/finlandica-italicWeb.ttf) format('truetype'),
+        url(../assets/fonts/finlandica-boldWeb.ttf) format('truetype');
+}
+@font-face {
+    font-family: Finlandica;
+    /* For IE9+ browsers */
+    src: url(../assets/fonts/finlandica-regularWeb.woff) format('woff'),
+        url(../assets/fonts/finlandica-italicWeb.woff) format('woff'),
+        url(../assets/fonts/finlandica-boldWeb.woff) format('woff');
+}
+@font-face {
+    font-family: Finlandica;
+    /* For IDK browsers */
+    src: url(../assets/fonts/finlandica-regularWeb.woff2) format('woff2'),
+        url(../assets/fonts/finlandica-italicWeb.woff2) format('woff2'),
+        url(../assets/fonts/finlandica-boldWeb.woff2) format('woff2');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Finlandica', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.fw100 {
+    font-weight: 100;
+}
+/* Header */
+header {
+    height: 21vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+header .logo-part {
+    padding: 2.5vh 3vw 2.5vh 3vw;
+    width: 94vw;
+    height: 8vw;
+}
+header .logo-container {
+    margin-bottom: 2.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo-part h5 {
+    padding: 5px;
+}
+header .logo-part h1 a {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+header .logo-part h5 a {
+    color: var(--secondary-color);
+}
+header nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--secondary-color);
+    width: 97vw;
+    margin-left: -3vw;
+    padding-left: 3vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 40vw;
+    list-style: none;
+}
+header nav ul li {
+    padding: 5px;
+}
+header nav ul li a {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 5px;
+}
+/* main area */
+#hero-banner {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero-banner::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+#hero-banner .container {
+    z-index: 1;
+}
+#hero-banner .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    width: 57vw;
+    text-align: center;
+}
+#hero-banner .container .content h1 {
+    font-size: 100px;
+}
+#hero-banner .container .content h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+/* exploring area */
+#exploring {
+    margin-bottom: 20vh;
+}
+.img {
+    width: 325px;
+    height: 200px;
+    text-shadow: 0 0 2px #000000;
+}
+.img:hover {
+    text-decoration: underline;
+}
+#exploring .container {
+    padding: 2.5vh 0 2.5vh 3.5vw;
+    width: 90vw;
+}
+#exploring .container .categories a {
+    color: var(--primary-color);
+    font-size: 28px;
+    text-transform: uppercase;
+}
+#exploring .container .content .heading h1 {
+    color: var(--secondary-color);
+    font-size: 48px;
+    margin-bottom: 2vh;
+}
+#exploring .container .content .heading p {
+    font-size: 24px;
+    margin-bottom: 10vh;
+}
+#exploring .container .content .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+#img--1 {
+    background-color: var(--secondary-color);
+}
+#img--2 {
+    background-color: var(--secondary-color);
+}
+#img-1 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/Helsinki-University-Main-Library-Kaisa-House-1_1191-495x400.jpg')
+        no-repeat center center/cover;
+}
+#img-2 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/shutterstock_281485004-495x400.jpg')
+        no-repeat center center/cover;
+}
+#img-3 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/Helsinki_TamminiementienKahvila_004-495x400.jpg')
+        no-repeat center center/cover;
+}
+#img-4 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/shutterstock_569844733-495x400.jpg')
+        no-repeat center center/cover;
+}
+#img-5 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/offset_comp_578341-495x400.jpg')
+        no-repeat center center/cover;
+}
+#img-6 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/Neuvonta_ja_sparraus_Suunnittele_ja_resurssoi-495x400.jpg')
+        no-repeat center center/cover;
+}
+#img-7 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/AdobeStock_201689723-495x400.jpeg')
+        no-repeat center center/cover;
+}
+/* area area */
+#area {
+    margin-bottom: 20vh;
+}
+.img {
+    width: 325px;
+    height: 200px;
+    text-shadow: 0 0 2px #000000;
+}
+.img:hover {
+    text-decoration: underline;
+}
+#area .container {
+    padding: 2.5vh 0 2.5vh 3.5vw;
+    width: 90vw;
+}
+#area .container .categories a {
+    color: var(--primary-color);
+    font-size: 28px;
+    text-transform: uppercase;
+}
+#area .container .content .heading h1 {
+    color: var(--secondary-color);
+    font-size: 48px;
+    margin-bottom: 2vh;
+}
+#area .container .content .heading p {
+    font-size: 24px;
+    margin-bottom: 10vh;
+}
+#area .container .content .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+.img--1 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2020/01/helsinki_facebook-495x400.jpg')
+        no-repeat center center/cover;
+}
+.img--2 {
+    background-color: var(--secondary-color);
+}
+.img-1 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2020/06/20180607_184429-495x400.jpg')
+        no-repeat center center/cover;
+}
+.img-2 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/12/Talent_Call_Turku_4-495x400.jpg')
+        no-repeat center center/cover;
+}
+.img-3 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/kuopio-495x400.jpg')
+        no-repeat center center/cover;
+}
+.img-4 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/jyrki-nieminen-5zLhWqntDQA-unsplash-495x400.jpeg')
+        no-repeat center center/cover;
+}
+.img-5 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/vaasa-495x400.jpg')
+        no-repeat center center/cover;
+}
+.img-6 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2020/06/Satakunta-495x400.jpg')
+        no-repeat center center/cover;
+}
+.img-7 {
+    background: url('https://jobs.workinfinland.fi/wp-content/uploads/2019/11/espoo-495x400.jpg')
+        no-repeat center center/cover;
+}
+/* footer area */
+footer {
+    height: 57vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+footer .comntainer {
+    width: 94vw;
+}
+footer .container .left {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+}

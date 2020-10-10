@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 150vh;
+    width: 100vw;
+    background: url(../img/mountain-1245916_1920.jpg) no-repeat center center/cover;
+    background-color: #1f2833;
+    color: #c5c6c7;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    opacity: 0.7;
+    height: 65px;
+    background-color:#1f2833;
+    color: #66fcf1;
+    list-style: none;
+}
+.nav_link:hover {
+    background-color: rgb(31, 31, 31);
+    transition-duration: 0.3 ms;
+    padding: 20px 0px;
+}
+ul>li {
+    margin-right: 3%;
+    margin-left: 1%;
+    display: inline-block;
+}
+ul {
+    padding-top: 25px;
+}
+a {
+    color: #c5c6c7;
+    text-decoration: none;
+}
+header a {
+    color: rgba(102, 252, 241, 1);
+}
+table {
+    color: #c5c6c7;
+    margin-top: 50px;
+    border-collapse: collapse
+}
+td {
+    padding: 0px 10px 20px 10px;
+    border-bottom: 2px solid #1f2833 ;
+}
+.box {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+.box1 {
+   background-color: green; 
+   border: 5px dotted white;
+}
+.box2 {
+    background-color: yellow; 
+    border-radius: 50%;
+    border: 10px double black;
+ }
+ .box3 {
+    background-color: cyan; 
+    border: 20px dotted greenyellow;
+ }
+ .box4 {
+    background-color: red; 
+    border: 2px dashed beige;
+ }

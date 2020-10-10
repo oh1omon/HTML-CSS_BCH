@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Comfortaa', cursive;
+}
+/*Header*/
+header {
+    height: 25vh;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+header .logo img {
+    height: 100px;
+}
+header .nav ul {
+    display: flex;
+    justify-content: center;
+}
+header .nav ul li {
+    list-style-type: none;
+}
+header .nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: 0 3vw;
+}
+
+/*Main*/
+
+/*hero-banner*/
+#hero-banner {
+    height: 75vh;
+    background: url(https://source.unsplash.com/featured/?sky) no-repeat center
+    center/cover;
+}
+#hero-banner .container {
+    width: 27vw;
+    height: 30vh;
+    background-color: rgba(255, 132, 0, 0.8);
+}
+
+/*about*/
+#about {
+    height: 65vh;
+}
+#about .container img {
+    width: 40%;
+}
+#about .container .texts {
+    width: 40%;
+}
+
+
+/*Footer*/

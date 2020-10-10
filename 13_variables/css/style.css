@@ -1,0 +1,29 @@
+:root {
+    --background: lightblue;
+    --font: 'Roboto', sans-serif;
+    --primary-color: lightyellow;
+    --dark-color: #333;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--font);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    height: 80vh;
+    width: 80vw;
+}
+.item {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+    box-shadow: 0px 0px 3px #000000;
+    font-size: 2rem;
+}

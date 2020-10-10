@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    font-family: 'Comfortaa', cursive;
+}
+/* Header*/
+header {
+    display:flex;
+    height: 10vh;
+}
+.logo-container {
+    flex: 3;
+    background-color: yellow;
+    margin: 2px;
+}
+nav {
+    flex: 3;
+    display: flex;
+}
+.nav1, .nav2, .nav3 {
+    flex: 1;
+    background-color: pink;
+    margin: 2px;
+}
+/*Main*/
+main {
+    display:flex;
+}
+.left {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+.l1 {
+    flex: 1;
+    height: 10vh;
+    background-color: #698994;
+    margin: 2px;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+}
+.l2 {
+    flex: 1;
+    background-color: lightgreen;
+    margin: 2px;
+}
+.Center {
+    flex: 3;
+    display: flex;
+    flex-flow: column wrap;
+}
+.c1 {
+    flex: 1;
+    background-color: grey;
+    height: 20vh;
+    margin: 2px;
+}
+.c2 {
+    flex: 2;
+    background-color: yellow;
+    margin: 2px;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+/*Main right*/
+.right {
+    flex: 1;
+    flex-flow: column wrap;
+}
+.r1, .r2, .r3 {
+    height: 26.5vh;
+    margin: 2px;
+}
+.r1 {
+    background-color: orange;
+}
+.r2 {
+    background-color: green;
+}
+.r3 {
+    background-color: pink;
+}
+/*Footer*/
+footer {
+    display: flex;
+    padding: 1rem;
+    background-color: red;
+    margin: 2px;
+    height: 5vh;
+}

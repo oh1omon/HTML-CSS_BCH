@@ -1,0 +1,25 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and  (max-width: 360px) {
+    body {
+        background-color: green;
+    }
+    p {
+        color: indigo;
+    }
+}
+@media only screen and  (min-width: 360px) {
+    body {
+        background-color: red;
+    }
+    p {
+        color: black;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #333;
+    }
+    p {
+        color: white;
+    }
+}
